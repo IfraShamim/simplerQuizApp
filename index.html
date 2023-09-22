@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f8a9ff872a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="startQuiz">Start Quiz</div>
+    <!-- .quizBox -->
+    <div class="quizBox inactive">
+        <h2 class="quesText"></h2>
+        <div class="options">
+            <!-- <div class="option correct">Hyper Text Markup Language <i class="fa-solid fa-check"></i></div>
+            <div class="option">Hyper Text Multiple Language</div>
+            <div class="option incorrect">Hyper Text Preprocessor <i class="fa-solid fa-xmark"></i></div>
+            <div class="option">Hyper Tool Multi Language</div> -->
+        </div>
+        <div class="quizFooter">
+            <div class="footerLeft">
+              <span class="countQue"></span> of <span class="totalQue"></span> Questions
+            </div>
+            <div class="footerRight">
+              <div class="nextBtn inactive">Next Question</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- .resultBox -->
+    <div class="resultBox inactive">
+        <h2>Result</h2>
+        <div class="result">
+            <h3 class="totalQues">Total Questions : <span></span></h3>
+            <h3 class="rightAns">Right Answers : <span></span></h3>
+            <h3 class="wrongAns">Wrong Answers : <span></span></h3>
+            <h3 class="percentage">Percentage : <span></span></h3>
+        </div>
+        <div class="resultFooter ">
+            <div class="againQuiz">Again Quiz</div>
+            <div class="exit">Exit</div>
+        </div>
+    </div>
+
+    <script src="./Javascript/questions.js"></script>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

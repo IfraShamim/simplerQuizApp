@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+html {
+    max-width: 120rem;
+    width: 100%;
+    overflow-x: hidden !important;
+    font-size: .9vw;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden !important;
+    background-color: rgb(125, 172, 180);
+
+}
+
+.startQuiz {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 3.5rem;
+    padding: 0.625rem 1.875rem;
+    border-radius: 1.5rem;
+    border: 0.3rem solid #fff;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.startQuiz:hover {
+    background-color: #fff;
+    color: rgb(34, 117, 155);
+}
+
+.inactive {
+    display: none;
+}
+.disabled{
+    pointer-events: none;
+}
+
+/* .quizBox */
+.quizBox {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+    border-radius: 1.5rem;
+    border: 0.3rem solid #fff;
+    color: #fff;
+    padding: 3.125rem;
+    max-width: 95rem;
+}
+
+.quizBox h2 {
+    font-size: 3rem;
+}
+
+.quizBox .option {
+    font-size: 1.75rem;
+    border: 2px solid #fff;
+    margin: 2.8rem 0;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.quizBox .option i {
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    font-size: 3rem;
+}
+
+.quizBox .option.correct {
+    background-color: #fff;
+    color: green;
+}
+
+.quizBox .option.incorrect {
+    background-color: #fff;
+    color: red;
+}
+
+.quizBox .option:hover {
+    background-color: #fff;
+    color: rgb(34, 117, 155);
+}
+
+.quizFooter {
+    border-top: 3px dashed #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    align-items: center;
+    font-size: 2rem;
+}
+.countQue,.totalQue{
+    font-weight: bold;
+    font-size: 3.1rem;
+}
+.nextBtn {
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 0.625rem 1.875rem;
+    border-radius: 1.5rem;
+    border: 0.3rem solid #fff;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.nextBtn:hover {
+    background-color: #fff;
+    color: rgb(34, 117, 155);
+}
+
+/* .resultBox */
+.resultBox {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+    border-radius: 1.5rem;
+    /* border: 0.3rem solid #fff; */
+    color: #fff;
+    max-width: 95rem;
+}
+
+.resultBox h2 {
+    background-color: #fff;
+    padding: 1rem;
+    color: rgb(34, 117, 155);
+    font-size: 3rem;
+    border-radius: 0.6rem;
+    text-align: center;
+}
+.resultBox h3{
+    font-size: 1.75rem;
+    margin: 2.5rem;
+}
+.resultFooter{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+.resultFooter .againQuiz,.resultFooter .exit{
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 0.625rem 1.875rem;
+    border-radius: 1.5rem;
+    border: 0.3rem solid #fff;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+}
+.resultFooter .againQuiz:hover,.resultFooter .exit:hover{
+    background-color: #fff;
+    color: rgb(34, 117, 155);
+}
+@media(max-width: 644px){
+    .startQuiz {
+        font-size: 9.5rem;
+    }
+    .quizBox h2 {
+        font-size: 8rem;
+    }
+    .quizBox .option {
+        font-size: 6.75rem;
+    }
+    .quizFooter{
+        font-size: 6rem;
+    }
+    .countQue,.totalQue{
+        font-weight: bold;
+        font-size: 7.2rem;
+    }
+    .nextBtn {
+        font-size: 4.5rem;
+    }
+    .resultBox h2{
+        font-size: 7.5rem;
+    }
+    .resultBox h3{
+        font-size: 4.75rem;
+    }
+    .resultFooter .againQuiz,.resultFooter .exit{
+        font-size: 5.5rem;
+    }
+    .quizFooter{
+    padding-top: 5.5rem;
+    }
+    .resultFooter{
+        padding-bottom: 6rem;
+    }
+}
